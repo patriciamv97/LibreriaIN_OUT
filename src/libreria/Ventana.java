@@ -1,5 +1,7 @@
 package libreria;
 
+import javax.swing.*;
+
 public class Ventana implements InterfaceMetodosComunes {
     private  String msg;
 
@@ -8,6 +10,6 @@ public class Ventana implements InterfaceMetodosComunes {
     }
     @Override
     public void visualizar() {
-        System.out.println("El mensaje se visualiza por ventana.\n" + msg);
+        JOptionPane.showMessageDialog(null,"El mensaje se visualiza por ventana.\n" + msg);
     }
 }

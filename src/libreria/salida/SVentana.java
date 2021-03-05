@@ -4,14 +4,14 @@ import libreria.InterfaceMetodosComunes;
 
 import javax.swing.*;
 
-public class Ventana implements InterfaceMetodosComunes {
+public class SVentana implements InterfaceMetodosComunes {
     private  final  String msg;
 
-    public Ventana(String msg) {
+    public SVentana(String msg) {
         this.msg = msg;
     }
     @Override
-    public void manejarDatos() {
+    public void comunicar() {
         JOptionPane.showMessageDialog(null,"El mensaje se visualiza por ventana.\n" + msg);
     }
 }

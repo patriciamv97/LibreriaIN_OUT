@@ -11,7 +11,7 @@ public class EVentana implements InterfaceMetodosComunes {
         this.msg=msg;
     }
     @Override
-    public void manejarDatos(){
+    public void comunicar(){
         JOptionPane.showInputDialog(msg);
     }
 }

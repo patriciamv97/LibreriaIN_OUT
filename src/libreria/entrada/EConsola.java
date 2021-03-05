@@ -10,7 +10,7 @@ public class EConsola implements InterfaceMetodosComunes {
         this.msg=msg;
     }
     @Override
-    public void manejarDatos() {
+    public void comunicar() {
         Scanner sc = new Scanner(System.in);
         System.out.println(msg);
         String respuesta=sc.nextLine();

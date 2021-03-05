@@ -2,9 +2,9 @@ package libreria;
 
 import libreria.entrada.EConsola;
 import libreria.entrada.EVentana;
-import libreria.salida.Consola;
-import libreria.salida.Impresora;
-import libreria.salida.Ventana;
+import libreria.salida.SConsola;
+import libreria.salida.SImpresora;
+import libreria.salida.SVentana;
 
 public class FactoriaDeSalidas {
 
@@ -15,12 +15,12 @@ public class FactoriaDeSalidas {
     public static InterfaceMetodosComunes getProductoTipoSalida(int type, String msg) {
         switch (type) {
             case CONSOLA:
-                return new Consola(msg);
+                return new SConsola(msg);
             //Como devuelvo el objeto instanciado (return) no hace falta poner break
             case VENTANA:
-                return new Ventana(msg);
+                return new SVentana(msg);
             case IMPRESORA:
-                return new Impresora(msg);
+                return new SImpresora(msg);
             default:
                 return null;
         }

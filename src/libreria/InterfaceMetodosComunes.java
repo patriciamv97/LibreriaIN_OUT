@@ -1,6 +1,6 @@
 package libreria;
 
 public interface InterfaceMetodosComunes {
-    public void manejarDatos();
+    public void comunicar();
 
 }

@@ -2,16 +2,16 @@ package libreria.salida;
 
 import libreria.InterfaceMetodosComunes;
 
-public class Impresora implements InterfaceMetodosComunes {
+public class SImpresora implements InterfaceMetodosComunes {
 
     private String msg;
 
-    public Impresora(String msg) {
+    public SImpresora(String msg) {
         this.msg = msg;
     }
 
     @Override
-    public void manejarDatos() {
+    public void comunicar() {
         System.out.println("Imprimiendo...\n"+msg);
     }
 }

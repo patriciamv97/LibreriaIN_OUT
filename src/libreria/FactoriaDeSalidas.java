@@ -1,12 +1,18 @@
 package libreria;
 
+import libreria.entrada.EConsola;
+import libreria.entrada.EVentana;
+import libreria.salida.Consola;
+import libreria.salida.Impresora;
+import libreria.salida.Ventana;
+
 public class FactoriaDeSalidas {
 
     public static final int CONSOLA = 1;
     public static final int VENTANA = 2;
     public static final int IMPRESORA=3;
 
-    public static InterfaceMetodosComunes getProducto(int type, String msg) {
+    public static InterfaceMetodosComunes getProductoTipoSalida(int type, String msg) {
         switch (type) {
             case CONSOLA:
                 return new Consola(msg);
@@ -15,6 +21,16 @@ public class FactoriaDeSalidas {
                 return new Ventana(msg);
             case IMPRESORA:
                 return new Impresora(msg);
+            default:
+                return null;
+        }
+    }
+    public  static InterfaceMetodosComunes getProductoTipoEntrada(int type,String msg){
+        switch (type){
+            case CONSOLA:
+                return new EConsola(msg);
+            case VENTANA:
+                return new EVentana(msg);
             default:
                 return null;
         }

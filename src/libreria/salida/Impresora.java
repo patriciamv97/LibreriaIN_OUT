@@ -1,4 +1,6 @@
-package libreria;
+package libreria.salida;
+
+import libreria.InterfaceMetodosComunes;
 
 public class Impresora implements InterfaceMetodosComunes {
 
@@ -9,7 +11,7 @@ public class Impresora implements InterfaceMetodosComunes {
     }
 
     @Override
-    public void visualizar() {
+    public void manejarDatos() {
         System.out.println("Imprimiendo...\n"+msg);
     }
 }

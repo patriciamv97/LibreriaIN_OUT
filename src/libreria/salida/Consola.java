@@ -1,4 +1,6 @@
-package libreria;
+package libreria.salida;
+
+import libreria.InterfaceMetodosComunes;
 
 public class Consola implements InterfaceMetodosComunes {
     private  String msg;
@@ -9,7 +11,7 @@ public class Consola implements InterfaceMetodosComunes {
 
     //@Override para indicar que está sobrescribiendo el método de la interfaz
     @Override
-    public void visualizar(){
+    public void manejarDatos(){
         System.out.println("El mensaje se visualiza por consola.\n"+msg);
     }
 }
